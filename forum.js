@@ -26,7 +26,7 @@ const people = [
 //create text to dynamically display the average of the prices
 
 
-function averagePrice() {
+const avPrice = function () {
     let sum = 0;
     for(const item of prices) {
         sum += item;
@@ -35,10 +35,12 @@ function averagePrice() {
 }
 
 function addP() {
-    const freelancers = document.querySelector("h3");
-    const p = document.createElement('p');
+    const freelancers = document.querySelector("body");
+    document.createElement('p');
+    freelancers.body.insertBefore(p, freelancers.nextSibling);
     p.textContent = "This is fun";
-    freelancers.parentNode.insertAfter(p, )
+    freelancers.appendSibling('p');
+    
 }
 
 
